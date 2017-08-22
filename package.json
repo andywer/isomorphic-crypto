@@ -2,17 +2,26 @@
   "name": "isomorphic-crypto",
   "version": "3.0.0",
   "description": "Isomorphic crypto package for node and the browser.",
-  "keywords": ["crypto", "hash", "hmac", "isomorphic", "sign", "universal"],
-  "author": "Andy Wermke (https://github.com/andywer)",
+  "keywords": [
+    "crypto",
+    "hash",
+    "hmac",
+    "isomorphic",
+    "sign",
+    "universal"
+  ],
+  "author": "Andy Wermke <andy@dev.next-step-software.com>",
   "repository": "andywer/isomorphic-crypto",
   "main": "lib/index.js",
   "browser": "lib/browser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard"
   },
-  "author": "Andy Wermke <andy@dev.next-step-software.com>",
   "license": "MIT",
   "dependencies": {
     "crypto-browserify": "^3.11.1"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
