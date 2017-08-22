@@ -1,0 +1,9 @@
+.idea/
+.vscode/
+node_modules/
+.eslintcache
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+*.log
