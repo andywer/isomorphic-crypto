@@ -1,6 +1,6 @@
 # isomorphic-crypto [![NPM Version](https://img.shields.io/npm/v/isomorphic-crypto.svg)](https://www.npmjs.com/package/isomorphic-crypto)
 
-Isomorphic crypto package for node and the browser. Resolves to the [native crypto module](https://nodejs.org/api/crypto.html) when run in node and [crypto-browserify](https://www.npmjs.com/package/crypto-browserify) when run in the browser. Use it for hashing, signing and your other crypto needs.
+Isomorphic crypto package for node and the browser. Uses the [native crypto module](https://nodejs.org/api/crypto.html) when run in node and [crypto-browserify](https://www.npmjs.com/package/crypto-browserify) when run in the browser. Use it for hashing, signing and your other crypto needs!
 
 
 ## Installation
@@ -8,12 +8,20 @@ Isomorphic crypto package for node and the browser. Resolves to the [native cryp
 ```sh
 npm install --save isomorphic-crypto
 
-# or using yarn:
+# using yarn:
+
 yarn add isomorphic-crypto
 ```
 
 
 ## Usage
+
+Have a look at the official [crypto documentation](https://nodejs.org/api/crypto.html).
+
+Please be aware that the browser version of this library uses `crypto-browserify`, which is only a partial implementation of node's native `crypto` module. Check out [their documentation](https://www.npmjs.com/package/crypto-browserify) to see what is supported and what not.
+
+
+## Example
 
 ```js
 const crypto = require('isomorphic-crypto')
@@ -26,8 +34,6 @@ function sha512 (string) {
 
 console.log(`sha512('crypto rocks') = ${sha512('crypto rocks')}`)
 ```
-
-Please be aware that the browser version of this library uses `crypto-browserify`, which is only a partial implementation of node's native `crypto` module. Check out [their documentation](https://www.npmjs.com/package/crypto-browserify) to see what is supported and what not.
 
 
 ## Versioning
