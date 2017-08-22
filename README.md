@@ -1,4 +1,4 @@
-# isomorphic-crypto
+# isomorphic-crypto [![NPM Version](https://img.shields.io/npm/v/isomorphic-crypto.svg)](https://www.npmjs.com/package/isomorphic-crypto)
 
 Isomorphic crypto package for node and the browser. Resolves to the [native crypto module](https://nodejs.org/api/crypto.html) when run in node and [crypto-browserify](https://www.npmjs.com/package/crypto-browserify) when run in the browser. Use it for hashing, signing and your other crypto needs.
 
